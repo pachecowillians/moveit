@@ -12,6 +12,40 @@
     flex: 1;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-template-areas: "countdown challengeBox";
     gap: 6.25rem;
     align-content: center;
+    align-self: center;
+}
+
+.container>section>div:first-child {
+    grid-area: countdown;
+}
+
+.container>section>div:nth-child(2) {
+    grid-area: challengeBox;
+}
+
+@media(max-width:900px) {
+
+    .container{
+        padding: 20px;
+        height: auto;
+    }
+    .container section {
+        margin-top: 40px;
+        max-width: 70%;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: "challengeBox" "countdown";
+        justify-self: center;
+        gap: 3rem;
+    }
+}
+
+@media(max-width:500px) {
+
+    .container section {
+        max-width: 100%;
+    }
 }
