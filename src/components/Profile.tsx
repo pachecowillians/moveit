@@ -7,7 +7,7 @@ export function Profile() {
 
     return (
         <div className={styles.profileContainer}>
-            <img src='https://github.com/willianps31.png' alt='Willian Pacheco' />
+            <img src='https://github.com/pachecowillians.png' alt='Willian Pacheco' />
             <div>
                 <strong>Willian Pacheco</strong>
                 <p>
